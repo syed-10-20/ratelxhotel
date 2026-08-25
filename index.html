@@ -33,6 +33,8 @@
 
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
+                <button class="theme-toggle" id="themeToggle" type="button" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">🌙</button>
+
             <ul class="nav-links" id="navLinks">
 
                 <li><a href="#home">Home</a></li>
@@ -74,13 +76,16 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#menu" class="btn primary-btn">
-                        Explore Menu 🍽️
+                    <!-- ROUND 2 - 1: Interactive Welcome Message (existing hero control preserved) -->
+                    <a href="#menu" class="btn primary-btn" id="welcomeBtn">
+                        Get Started 🍽️
                     </a>
 
                     <a href="#booking" class="btn secondary-btn">
                         Book a Table 🪑
+
                     </a>
+                    <div id="welcomeMessage" class="dynamic-message" aria-live="polite"></div>
 
                 </div>
 
@@ -151,9 +156,11 @@
 
                 <div class="about-content">
 
-                    <h3>
+                    <h3 id="dynamicAboutTitle">
                         Where Technology Meets Taste
                     </h3>
+
+                    <button type="button" class="btn secondary-btn modify-btn" id="modifyContentBtn">✨ Modify This Section</button>
 
                     <p>
                         RatelX is a modern restaurant concept designed
@@ -202,6 +209,15 @@
             </div>
 
 
+            <div class="menu-tools">
+                <div class="menu-search">
+                    <label for="menuSearch">Search menu</label>
+                    <input type="search" id="menuSearch" placeholder="Search dishes..." autocomplete="off">
+                </div>
+            </div>
+
+            <div id="searchStatus" class="search-status" aria-live="polite"></div>
+
             <div class="category-buttons">
 
                 <button onclick="filterMenu('all')">All</button>
@@ -247,6 +263,7 @@
                             <button onclick="addToCart('Dragon Chicken',256)">
                                 + Add
                             </button>
+                            <button type="button" class="details-btn" data-food="Dragon Chicken" data-price="256" data-description="Crispy chicken tossed in our signature spicy dragon sauce.">View Details</button>
 
                         </div>
 
@@ -642,6 +659,8 @@
                     </div>
 
 
+                    <div id="bookingValidationMessage" class="validation-message" aria-live="polite"></div>
+
                     <button type="button" class="btn primary-btn full-btn" onclick="sendBookingOTP()">
 
                         🔐 Verify & Book Table
@@ -847,6 +866,26 @@
 
 
 
+        <section class="section json-section" id="chefPicks">
+
+            <div class="section-title">
+                <p>JSON-POWERED PICKS</p>
+                <h2>Chef Picks Generated Dynamically</h2>
+                <span></span>
+            </div>
+
+            <div id="jsonMenuGrid" class="json-menu-grid"></div>
+            <div class="smart-combo-panel">
+                <h3>⚡ Smart Combo Builder</h3>
+                <p>Select any three Chef Picks. The total updates instantly.</p>
+                <div id="smartComboResult" class="smart-combo-result" aria-live="polite">Choose items to build your combo.</div>
+                <button type="button" class="btn primary-btn" id="addComboBuilderBtn">Add Selected to Order</button>
+                <button type="button" class="btn secondary-btn" id="clearComboBtn">Clear Selection</button>
+            </div>
+
+        </section>
+
+
         <section class="section innovation">
 
             <div class="section-title">
@@ -1006,6 +1045,19 @@
 
 
 
+
+    <div id="eventFeedback" class="event-feedback" aria-live="polite"></div>
+
+    <div id="foodModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Close details">&times;</button>
+            <p class="small-title">RATELX MENU</p>
+            <h2 id="modalTitle">Dish Details</h2>
+            <p id="modalDescription"></p>
+            <strong id="modalPrice"></strong>
+            <button type="button" class="btn primary-btn" id="modalAddBtn">🛒 Add to Order</button>
+        </div>
+    </div>
 
     <a href="order.html" class="cart-button">
 
