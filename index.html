@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="RatelX Restaurant - Digital Food Ordering and Smart Table Booking">
+
+    <title>RatelX Restaurant | Taste Beyond Expectations</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>R</span>
+                RatelX
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#booking">Table Booking</a></li>
+                <li><a href="#rating">Rating</a></li>
+                <li><a href="#about">About</a></li>
+
+            </ul>
+
+            <a href="order.html" class="nav-order">
+                🛒 Order Now
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">WELCOME TO RATELX</p>
+
+                <h1>
+                    Taste The <span>Extraordinary</span>
+                </h1>
+
+                <p>
+                    Delicious food, unforgettable moments and
+                    a smarter restaurant experience.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn primary-btn">
+                        Explore Menu 🍽️
+                    </a>
+
+                    <a href="#booking" class="btn secondary-btn">
+                        Book a Table 🪑
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>50+</strong>
+                        <small>Dishes</small>
+                    </div>
+
+                    <div>
+                        <strong>4.9★</strong>
+                        <small>Rating</small>
+                    </div>
+
+                    <div>
+                        <strong>10K+</strong>
+                        <small>Customers</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-food">
+
+                <div class="food-circle">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=370&amp;q=100"
+                        alt="Delicious pizza" class="main-img">
+                </div>
+
+                <div class="floating-card card-one">
+                    ⭐ 4.9 Rating
+                </div>
+
+                <div class="floating-card card-two">
+                    🔥 Today's Special
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="about" class="section about-section">
+
+            <div class="section-title">
+
+                <p>ABOUT RATELX</p>
+
+                <h2>
+                    More Than Just A Restaurant
+                </h2>
+
+                <span></span>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;w=540&amp;q=210"
+                        alt="Spice Route restaurant" class="rest-img">
+                </div>
+
+                <div class="about-content">
+
+                    <h3>
+                        Where Technology Meets Taste
+                    </h3>
+
+                    <p>
+                        RatelX is a modern restaurant concept designed
+                        to make dining simple, delicious and convenient.
+                    </p>
+
+                    <p>
+                        From online food ordering to smart table booking,
+                        customers can manage their complete restaurant
+                        experience from one website.
+                    </p>
+
+                    <div class="features">
+
+                        <div>✓ Fresh Ingredients</div>
+                        <div>✓ Fast Service</div>
+                        <div>✓ Hygienic Kitchen</div>
+                        <div>✓ Easy Online Booking</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+
+
+        <section id="menu" class="section">
+
+            <div class="section-title">
+
+                <p>OUR MENU</p>
+
+                <h2>
+                    Discover Our Delicious Menu
+                </h2>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="category-buttons">
+
+                <button onclick="filterMenu('all')">All</button>
+                <button onclick="filterMenu('starter')">Starters</button>
+                <button onclick="filterMenu('main')">Main Course</button>
+                <button onclick="filterMenu('dessert')">Desserts</button>
+                <button onclick="filterMenu('drink')">Drinks</button>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+
+
+
+                <article class="food-card" data-category="starter">
+
+                    <div class="food-image">
+                        <img src="https://i0.wp.com/www.shanazrafiq.com/wp-content/uploads/2018/12/Dragon-Chicken-3.jpg?fit=1200%2C798&amp;ssl=1"
+                            alt="Dragon Chicken" decoding="async" class="img-size">
+                        <span class="discount">20% OFF</span>
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="food-type">STARTER</span>
+
+                        <h3>Dragon Chicken</h3>
+
+                        <p>
+                            Crispy chicken tossed in our signature
+                            spicy dragon sauce.
+                        </p>
+
+                        <div class="price-row">
+
+                            <div>
+                                <del>₹320</del>
+                                <strong>₹256</strong>
+                            </div>
+
+                            <button onclick="addToCart('Dragon Chicken',256)">
+                                + Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+                <article class="food-card" data-category="main">
+
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&amp;fit=crop&amp;"
+                            alt="Chicken Biryani" class="img-size">
+                        <span class="special">SPECIAL</span>
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="food-type">MAIN COURSE</span>
+
+                        <h3>RatelX Royal Biryani</h3>
+
+                        <p>
+                            Aromatic basmati rice with tender chicken,
+                            herbs and secret spices.
+                        </p>
+
+                        <div class="price-row">
+
+                            <div>
+                                <del>₹380</del>
+                                <strong>₹299</strong>
+                            </div>
+
+                            <button onclick="addToCart('RatelX Royal Biryani',299)">
+                                + Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+                <article class="food-card" data-category="main">
+
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&amp;fit=crop&amp;"
+                            alt="Margherita Pizza" class="img-size">
+                        <span class="discount">15% OFF</span>
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="food-type">MAIN COURSE</span>
+
+                        <h3>Cheese Burst Pizza</h3>
+
+                        <p>
+                            Golden crust loaded with cheese,
+                            vegetables and special toppings.
+                        </p>
+
+                        <div class="price-row">
+
+                            <div>
+                                <del>₹450</del>
+                                <strong>₹382</strong>
+                            </div>
+
+                            <button onclick="addToCart('Cheese Burst Pizza',382)">
+                                + Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+                <article class="food-card" data-category="starter">
+
+                    <div class="food-image">
+                        <img src="https://jeyporedukaan.in/wp-content/uploads/2022/09/images-1-1.jpeg" class="img-size">
+                        <span class="discount">10% OFF</span>
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="food-type">STARTER</span>
+
+                        <h3>Golden Prawn Fry</h3>
+
+                        <p>
+                            Crispy prawns marinated with aromatic
+                            herbs and spices.
+                        </p>
+
+                        <div class="price-row">
+
+                            <div>
+                                <del>₹400</del>
+                                <strong>₹360</strong>
+                            </div>
+
+                            <button onclick="addToCart('Golden Prawn Fry',360)">
+                                + Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+                <article class="food-card" data-category="dessert">
+
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&amp;fit=crop&amp;"
+                            alt="Chocolate Lava Cake" class="img-size">
+                        <span class="special">NEW</span>
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="food-type">DESSERT</span>
+
+                        <h3>Choco Lava Dream</h3>
+
+                        <p>
+                            Warm chocolate cake with a rich
+                            molten chocolate centre.
+                        </p>
+
+                        <div class="price-row">
+
+                            <div>
+                                <strong>₹180</strong>
+                            </div>
+
+                            <button onclick="addToCart('Choco Lava Dream',180)">
+                                + Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+                <article class="food-card" data-category="drink">
+
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&amp;fit=crop&amp;"
+                            alt="Mango Shake" class="img-size">
+                        <span class="discount">25% OFF</span>
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="food-type">DRINK</span>
+
+                        <h3>Mango Magic</h3>
+
+                        <p>
+                            Fresh mango blended with chilled cream
+                            and premium ingredients.
+                        </p>
+
+                        <div class="price-row">
+
+                            <div>
+                                <del>₹160</del>
+                                <strong>₹120</strong>
+                            </div>
+
+                            <button onclick="addToCart('Mango Magic',120)">
+                                + Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="special-section" id="offers">
+
+            <div class="special-content">
+
+                <p>TODAY'S SPECIAL</p>
+
+                <h2>
+                    RatelX Royal Combo
+                </h2>
+
+                <p>
+                    Royal Biryani + Dragon Chicken +
+                    Mango Magic + Choco Lava Dream
+                </p>
+
+                <div class="combo-price">
+
+                    <del>₹950</del>
+
+                    <strong>₹699</strong>
+
+                    <span>26% OFF</span>
+
+                </div>
+
+                <button class="btn primary-btn" onclick="addCombo()">
+
+                    Order Today's Combo 🔥
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="booking" class="section booking-section">
+
+            <div class="section-title">
+
+                <p>SMART TABLE BOOKING</p>
+
+                <h2>
+                    Reserve Your Table
+                </h2>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="booking-container">
+
+                <div class="booking-info">
+
+                    <h3>
+                        Your Table Is Waiting 🪑
+                    </h3>
+
+                    <p>
+                        Avoid waiting time. Reserve your table
+                        before reaching RatelX.
+                    </p>
+
+                    <div class="booking-benefits">
+
+                        <div>🔐 Secure Verification</div>
+                        <div>⏰ Flexible Time Slots</div>
+                        <div>👨‍👩‍👧‍👦 Group Booking</div>
+                        <div>📧 Booking Confirmation</div>
+
+                    </div>
+
+                </div>
+
+
+                <form id="bookingForm" class="booking-form">
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label>Name *</label>
+
+                            <input type="text" id="bookingName" required placeholder="Enter your name">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Age *</label>
+
+                            <input type="number" id="bookingAge" min="10" max="100" required placeholder="Age">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label>Phone Number *</label>
+
+                            <input type="tel" id="bookingPhone" required placeholder="10-digit mobile number">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Email *</label>
+
+                            <input type="email" id="bookingEmail" required placeholder="example@gmail.com">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Number of People *</label>
+
+                        <select id="people" required>
+
+                            <option value="">Select</option>
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4 People</option>
+                            <option>5 People</option>
+                            <option>6+ People</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="input-group">
+
+                            <label>Booking Date *</label>
+
+                            <input type="date" id="bookingDate" required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Preferred Time *</label>
+
+                            <select id="bookingTime" required>
+
+                                <option value="">Choose Time</option>
+
+                                <option>12:00 PM</option>
+                                <option>1:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>3:00 PM</option>
+                                <option>4:00 PM</option>
+                                <option>6:00 PM</option>
+                                <option>7:00 PM</option>
+                                <option>8:00 PM</option>
+                                <option>9:00 PM</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Address</label>
+
+                        <textarea id="bookingAddress" rows="3" placeholder="Enter your address"></textarea>
+
+                    </div>
+
+
+                    <button type="button" class="btn primary-btn full-btn" onclick="sendBookingOTP()">
+
+                        🔐 Verify & Book Table
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+
+
+            <div id="otpBox" class="otp-box">
+
+                <h3>🔐 Verify Your Mobile</h3>
+
+                <p>
+                    Demo OTP has been sent to your mobile number.
+                </p>
+
+                <input type="text" id="otpInput" maxlength="6" placeholder="Enter 6-digit OTP">
+
+                <button class="btn primary-btn" onclick="verifyOTP()">
+
+                    Verify OTP
+
+                </button>
+
+                <p id="demoOTP"></p>
+
+            </div>
+
+
+            <div id="bookingSuccess" class="success-message">
+
+                <h3>🎉 Table Successfully Reserved!</h3>
+
+                <p id="bookingDetails"></p>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="rating" class="section rating-section">
+
+            <div class="section-title">
+
+                <p>YOUR EXPERIENCE MATTERS</p>
+
+                <h2>
+                    Rate Your RatelX Experience ⭐
+                </h2>
+
+                <span></span>
+
+            </div>
+
+
+            <form id="ratingForm" class="rating-form">
+
+
+                <div class="input-group">
+
+                    <label>Your Name</label>
+
+                    <input type="text" id="ratingName" placeholder="Enter your name" required>
+
+                </div>
+
+
+                <div class="rating-question">
+
+                    <h3>Overall Restaurant Experience</h3>
+
+                    <div class="stars">
+
+                        <input type="radio" name="overall" value="5" id="s5">
+                        <label for="s5">★</label>
+
+                        <input type="radio" name="overall" value="4" id="s4">
+                        <label for="s4">★</label>
+
+                        <input type="radio" name="overall" value="3" id="s3">
+                        <label for="s3">★</label>
+
+                        <input type="radio" name="overall" value="2" id="s2">
+                        <label for="s2">★</label>
+
+                        <input type="radio" name="overall" value="1" id="s1">
+                        <label for="s1">★</label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="rating-grid">
+
+
+                    <div>
+
+                        <label>Food Quality</label>
+
+                        <select id="foodRating" required>
+
+                            <option value="">Select Rating</option>
+                            <option>⭐⭐⭐⭐⭐ Excellent</option>
+                            <option>⭐⭐⭐⭐ Very Good</option>
+                            <option>⭐⭐⭐ Good</option>
+                            <option>⭐⭐ Average</option>
+                            <option>⭐ Poor</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Restaurant Cleanliness</label>
+
+                        <select id="cleanRating" required>
+
+                            <option value="">Select Rating</option>
+                            <option>⭐⭐⭐⭐⭐ Excellent</option>
+                            <option>⭐⭐⭐⭐ Very Good</option>
+                            <option>⭐⭐⭐ Good</option>
+                            <option>⭐⭐ Average</option>
+                            <option>⭐ Poor</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Staff Behaviour</label>
+
+                        <select id="staffRating" required>
+
+                            <option value="">Select Rating</option>
+                            <option>⭐⭐⭐⭐⭐ Excellent</option>
+                            <option>⭐⭐⭐⭐ Very Good</option>
+                            <option>⭐⭐⭐ Good</option>
+                            <option>⭐⭐ Average</option>
+                            <option>⭐ Poor</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Service Speed</label>
+
+                        <select id="serviceRating" required>
+
+                            <option value="">Select Rating</option>
+                            <option>⭐⭐⭐⭐⭐ Excellent</option>
+                            <option>⭐⭐⭐⭐ Very Good</option>
+                            <option>⭐⭐⭐ Good</option>
+                            <option>⭐⭐ Average</option>
+                            <option>⭐ Poor</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Suggestions / Feedback</label>
+
+                    <textarea id="suggestion" rows="5" placeholder="Tell us how we can improve..."></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn primary-btn">
+
+                    Submit Rating ⭐
+
+                </button>
+
+            </form>
+
+
+            <div id="ratingSuccess" class="success-message">
+
+                ⭐ Thank you for rating RatelX Restaurant!
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="section innovation">
+
+            <div class="section-title">
+
+                <p>WHY RATELX?</p>
+
+                <h2>
+                    A Smarter Dining Experience
+                </h2>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="innovation-grid">
+
+                <article>
+
+                    <div>📱</div>
+
+                    <h3>Digital Ordering</h3>
+
+                    <p>
+                        Order food directly from the website
+                        without waiting for a waiter.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <div>🔐</div>
+
+                    <h3>OTP Table Protection</h3>
+
+                    <p>
+                        Mobile verification helps prevent
+                        fake or unwanted table bookings.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <div>🎁</div>
+
+                    <h3>Smart Offers</h3>
+
+                    <p>
+                        Discover daily specials, combo offers
+                        and personalized discounts.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <div>⭐</div>
+
+                    <h3>Customer Feedback</h3>
+
+                    <p>
+                        Ratings help RatelX continuously
+                        improve food and service quality.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <div class="logo footer-logo">
+                    <span>R</span>
+                    RatelX
+                </div>
+
+                <p>
+                    Taste Beyond Expectations.
+                </p>
+
+                <p>
+                    🍽️ Delicious food.
+                    ❤️ Memorable moments.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#booking">Book Table</a>
+                <a href="#rating">Rating</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📞 +91 93428 44059</p>
+                <p>📧 ratelx2026@gmail.com</p>
+                <p>📍 Ranipet, Tamil Nadu</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Opening Hours</h3>
+
+                <p>Monday - Friday</p>
+                <p>11:00 AM - 10:30 PM</p>
+
+                <p>Saturday - Sunday</p>
+                <p>10:00 AM - 11:30 PM</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                Thanks for visiting RatelX Restaurant ❤️
+            </p>
+
+            <p>
+                © 2026 RatelX Restaurant. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <a href="order.html" class="cart-button">
+
+        🛒
+        <span id="cartCount">0</span>
+
+    </a>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
