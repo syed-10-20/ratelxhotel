@@ -92,6 +92,15 @@
 
             </div>
 
+            <div class="bill-calculator">
+                <h3>🧮 Quick Bill Calculator</h3>
+                <p>Enter a tip percentage to estimate your final bill.</p>
+                <div class="calculator-row">
+                    <input type="number" id="tipPercent" min="0" max="100" step="1" placeholder="Tip %">
+                    <button type="button" class="btn secondary-btn" id="calculateBillBtn">Calculate</button>
+                </div>
+                <p id="calculatorResult" class="calculator-result" aria-live="polite"></p>
+            </div>
         </div>
 
 
